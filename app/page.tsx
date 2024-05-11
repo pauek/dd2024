@@ -1,4 +1,4 @@
-import AllCollapsedButton from "@/components/AllCollapsedButton";
+import Controls from "@/components/Controls";
 import { CollapsedStateProvider } from "@/components/CollapsedState";
 import Header from "@/components/Header";
 import MrWolf from "@/components/MrWolf";
@@ -42,7 +42,8 @@ export default async function Home() {
       <MrWolf />
 
       <CollapsedStateProvider>
-        <AllCollapsedButton />
+        <Controls />
+
         <article className="relative flex flex-col gap-[.7em]">
           <Section id={1} header={<>Installing the tools</>}>
             <ol>
