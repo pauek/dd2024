@@ -8,26 +8,36 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  @apply p-6 bg-slate-50 text-sm;
+}
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply font-bold text-lg m-0 mb-2;
+}
+pre {
+  @apply bg-slate-800 py-0.5 px-1.5 rounded text-white text-sm my-0.5 w-fit;
+}
+article {
+  @apply flex flex-col gap-4;
+}
+ul {
+  @apply list-disc pl-[1.2em] flex flex-col gap-[.3em];
+}
+ol {
+  @apply list-decimal pl-[1.2em];
+}
+code {
+  @apply bg-slate-200 p-0.5 px-1 rounded;
+}
+section a {
+  @apply text-blue-600 underline decoration-1 decoration-dotted underline-offset-4;
 }
