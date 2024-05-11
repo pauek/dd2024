@@ -44,7 +44,7 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className="flex flex-row items-center gap-2 w-fit">
+    <div className="flex flex-row items-center gap-2 flex-1">
       {started || (
         <button className="border p-1 px-3 rounded" onClick={go}>
           Start
@@ -55,16 +55,11 @@ export default function Clock() {
           value={t * 100}
           max={100}
           className={
-            "w-[40em] " +
+            "flex-1 mr-20 " +
             "[&::-webkit-progress-bar]:bg-slate-300 [&::-webkit-progress-value]:bg-blue-600 " +
             "[&::-moz-progress-bar]:bg-blue-400"
           }
         />
-      )}
-      {started && (
-        <button className="border p-1 px-3 rounded" onClick={clear}>
-          Clear
-        </button>
       )}
     </div>
   );
