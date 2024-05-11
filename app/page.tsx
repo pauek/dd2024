@@ -233,14 +233,7 @@ export default async function Home() {
             </ul>
           </Section>
 
-          <Section
-            id={9}
-            header={
-              <>
-                A <code>User</code> component
-              </>
-            }
-          >
+          <Section id={9} header={<>A User component</>}>
             <ul>
               <li>
                 Make a file <code>components/User.tsx</code>.
@@ -272,14 +265,7 @@ export default async function Home() {
             </ul>
           </Section>
 
-          <Section
-            id={10}
-            header={
-              <>
-                Let&apos;s <code>fetch</code> some users
-              </>
-            }
-          >
+          <Section id={10} header={<>Let&apos;s fetch some users</>}>
             <ul>
               <li>
                 <code>fetch</code> is the standard way to get data using HTTP.
@@ -393,8 +379,19 @@ export default async function Home() {
                 later associate with your domain, if needed.
               </li>
               <li>
-                Deploy the <em>production version </em> with:
+                Deploy the <em>production version </em> with: <br />
                 <Pre>vercel --prod</Pre> <br />
+              </li>
+              <li>
+                If you make a repository of your project on GitHub, you can
+                connect it with <br />
+                <Pre>vercel git connect</Pre> <br />
+                After this, Vercel will deploy when you push to the{" "}
+                <code>main</code> branch.
+                <Note>
+                  You have to grant Vercel access to your GitHub repositories
+                  first.
+                </Note>
               </li>
             </ul>
           </Section>
