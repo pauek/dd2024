@@ -387,10 +387,14 @@ export default async function Home() {
                 <Pre>vercel login</Pre>
               </li>
               <li>
-                Deploy with: <br />
+                Deploy a preview with: <br />
                 <Pre>vercel</Pre> <br />
                 You will be assigned <code>vercel.app</code> domain that you can
                 later associate with your domain, if needed.
+              </li>
+              <li>
+                Deploy the <em>production version </em> with:
+                <Pre>vercel --prod</Pre> <br />
               </li>
             </ul>
           </Section>
