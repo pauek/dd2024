@@ -5,7 +5,7 @@ export default function ForkMe({ href }: { href: string }) {
     <Link href={href}>
       <div
         className={
-          "fixed top-[2em] -right-[12em] z-10 bg-red-500 w-[30em] py-2 " +
+          "fixed top-[2em] -right-[12em] z-10 bg-stone-500 w-[30em] py-2 " +
           "flex flex-row justify-center text-white font-bold text-xl rotate-45"
         }
       >

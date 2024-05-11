@@ -18,11 +18,16 @@ export default function Alternate({ children, alt }: AlternateProps) {
   };
 
   return (
-    <div className="cursor-pointer relative" onClick={open}>
-      <div className="absolute z-10 left-0 right-0" onClick={close}>
+    <div className="relative">
+      <div
+        className="absolute z-10 left-0 right-0 cursor-pointer"
+        onClick={close}
+      >
         {alternate && alt}
       </div>
-      {children}
+      <div className="cursor-pointer w-fit" onClick={open}>
+        {children}
+      </div>
     </div>
   );
 }

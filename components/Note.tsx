@@ -1,8 +1,9 @@
 import React from "react";
 
 type NoteProps = {
-  children: React.ReactNode;
+  className?: string;
+  children?: React.ReactNode;
 };
-export default function Note({ children }: NoteProps) {
-  return <p className="text-xs opacity-60 italic">{children}</p>;
+export default function Note({ children, className }: NoteProps) {
+  return <p className={(className || "") + " text-xs opacity-60 italic"}>{children}</p>;
 }

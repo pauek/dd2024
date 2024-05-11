@@ -41,3 +41,6 @@ code {
 section a {
   @apply text-blue-600 underline decoration-1 decoration-dotted underline-offset-4;
 }
+a {
+  @apply text-blue-600;
+}

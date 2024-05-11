@@ -29,16 +29,16 @@ export default function Pre({ children }: PreProps) {
       <div
         className={
           "absolute right-0.5 top-0 bottom-0 flex flex-col pt-[.25em] justify-start cursor-pointer " +
-          (copied ? "text-green-600" : "text-blue-300")
+          (copied ? "text-green-600" : "text-orange-300")
         }
         onClick={copy}
       >
         {copied ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
+            width="16"
+            height="16"
+            viewBox="2 4 18 20"
           >
             <path
               fill="currentColor"
